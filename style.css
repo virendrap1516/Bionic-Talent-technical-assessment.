@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+  body {
+    font-family: 'Roboto Slab', serif;
+    color: #314b57; /* Dark Blue/Green */
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: top;
+    justify-content: center;
+    
+  }
+
+  .top{
+    background-color: #314b57;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 10px;
+      justify-content: center;  
+      align-items: center;    
+    }
+
+    .map {
+      margin: 0;
+    }
+}
+
+.service-area {
+    margin-bottom: 60px;
+    align-items: top;
+    justify-content: top;
+    padding-left: 80px;
+    padding-right: 90px;
+    a{
+      text-decoration: none;
+    }
+}
+
+.helpful-articles {
+    
+    padding-left: 60px;
+    padding-right: 60px;
+}
+  
+  h1, h2, a {
+    color: #ab3c3c; 
+  }
+  h3 {
+    font-family: Arial, Helvetica;
+    margin-top: 30px;
+    color: white;   
+  }
+
+  a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    padding: 10px;
+    font-size: 32px;
+  }
+  
+.subtitles {
+  a {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+  }
+  }
+  .read-more{
+    margin: 50px 0 20px 0;
+    align-items: bottom;
+    line-height: 2em;
+  
+  }
+
+/* Responsive Design for Smallest Viewport (320px) */
+  @media only screen and (max-width: 800px) {
+    body {
+      .container {
+        flex-direction: column;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      .service-area, .helpful-articles {
+        padding-left: 20px;
+        padding-right: 20px;
+  }
+}
+  }
